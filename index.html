@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlexiDays</title>
+  <link rel="stylesheet" href="assets/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body class="bg-body-tertiary">
+  <header>
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container">
+        <!-- <img class="logo" src="images/logo.png" alt="logo image"> -->
+        <a class="navbar-brand" href="#">Flexi-<span class="two-navbar">Days</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Dashbord</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="conges.html">Mes Conges</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="demande-conge.html">Demande conges</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="admin.html">Adminitstrator</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-solid fa-user"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section>
+    <div class="container">
+      <div class="row">
+        <h3 class="col-12 mt-4">Tableau de bord</h3>
+        <p class="col-12">Bienvenue gerez vos conge et suivez vos demandes</p>
+      </div>
+    </div>
+    <div class="container rounded-2" style="background-color: #6686fa;">
+      <div class="row">
+        <h5 class="col-lg-11 col-md-11  p-2">Notifications importantes</h5>
+        <div class="col-lg-1 col-md-1"><i class="fa-solid fa-angle-left m-2 "></i><i class="fa-solid fa-angle-right"></i></div>
+      </div>
+      <div class="row m-2">
+        <div class="col-sm-12 my-2 bg-body-tertiary rounded-2">
+            <h6 class="p-2"><i class="fa-solid fa-circle-exclamation"></i> Fermture exceptonnelle</h6>
+            <p class="p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container p-2 mt-5">
+      <div class="row g-3">
+        <div class="col-lg-4 col-md-6 col-sm-12 ">
+          <div class="d-flex justify-content-between align-items-start p-3 rounded-2 card-date" >
+            <div>
+              <h5>Solde de congés</h5>
+              <p>Congés payés</p>
+              <p>RTT</p>
+              <p>Congés maladie</p>
+            </div>
+            <div class="text-end">
+              <i class="fa-solid fa-calendar-days mb-2 pt-2"></i>
+              <p>25 jours</p>
+              <p>8 jours</p>
+              <p>5 jours</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="d-flex justify-content-between align-items-start p-3 rounded-2 card-date1">
+            <div>
+              <h5>Demandes en congés</h5>
+              <p>En attente</p>
+              <p>Approuvées</p>
+              <p>Refusées</p>
+            </div>
+            <div class="d-flex align-items-end flex-column">
+              <i class="fa-solid fa-clock mb-2 pt-2"></i>
+              <p>2</p>
+              <p>2</p>
+              <p>0</p>
+            </div>
+          </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 ">
+          <div class="d-flex justify-content-between align-items-start p-2 rounded-2 card-date2">
+            <div>
+              <h5>Prochains conges</h5>
+              <h6>Conges d'ete</h6>
+              <p>15 - 30 juillet 2025</p>
+              <h6>Pont de mai</h6>
+              <p>1 - 2 mai 2025</p>
+            </div>
+            <div class="text-end">
+              <i class="fa-solid fa-plane mb-2 pt-2"></i>
+            </div>
+          </div>
+          </div>
+      </div>
+    </div>
+    <div class="container rounded-2 mt-5" style="background-color: #fff;">
+      <div class="row">
+        <h5 class="col-lg-11 col-md-11  p-2">Actions rapides</h5>
+      </div>
+      <div class="row g-3 p-4">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="d-flex justify-content-center align-items-start p-3 rounded-2 sec-card" >
+            <div>
+              <h5 class="text-center"><i class="fa-solid fa-plus"></i></h5>
+              <h5>Nouvelle demande</i></h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="d-flex justify-content-center align-items-start p-3 rounded-2 sec-card1" >
+            <div>
+              <h5 class="text-center"><i class="fa-solid fa-bars"></i></h5>
+              <h5>Mes conge</i></h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="d-flex justify-content-center align-items-start p-3 rounded-2 sec-card2" >
+            <div>
+              <h5 class="text-center"><i class="fa-solid fa-chart-line"></i></h5>
+              <h5>Statistique</i></h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="d-flex justify-content-center align-items-start p-3 rounded-2 sec-card3" >
+            <div>
+              <h5 class="text-center"><i class="fa-solid fa-gear"></i></h5>
+              <h5>Parametres</i></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- Bootstrap js -->
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

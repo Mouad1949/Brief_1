@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlexiDays</title>
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="assets/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body class="bg-body-tertiary">
+  <header>
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container">
+        <!-- <img class="logo" src="images/logo.png" alt="logo image"> -->
+        <a class="navbar-brand" href="#">Flexi-<span class="two-navbar">Days</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Dashbord</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="conges.html">Mes Conges</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="demande-conge.html">Demande conges</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="admin.html">Adminitstrator</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-solid fa-user"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+<section class="m-4">
+    <div class="container custom-width2 p-4 rounded">
+      <div class="row ">
+        <div class="d-flex flex-column">
+          <h3>Nouvelle demande de conge</h3>
+          <p>Remplissez le formulaire ci-dessous pour soumette votre demande de conge</p>
+        </div>
+      </div>
+    </div>
+    <div class="container pt-4 custom-width bg-white">
+      <div class="row">
+        <div class="col p-4">
+          <label>Date de debut</label>
+          <input type="date" class="form-control">
+        </div>
+        <div class="col p-4">
+          <label>Date de fin</label>
+          <input type="date" class="form-control">
+        </div>
+        <div class="p-4">
+          <label>Type de conge</label>
+          <select id="" class="form-select">
+            <option selected>Selectionnez un type de conge</option>
+            <option>...</option>
+          </select>
+        </div>
+        <div class="col p-4">
+          <label>Justification</label>
+          <textarea class="form-control" placeholder="Decrivez la raison de votre demande de conge"></textarea>
+          <p>Maximum 500 caracteres</p>
+          
+        </div>
+        <div class="row m-2">
+            <div class="col-sm-12 my-2 bg-body-tertiary rounded-2">
+                <h6 class="p-2"><i class="fa-solid fa-circle-exclamation"></i> Fermture exceptonnelle</h6>
+                <p class="p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        </div>
+        <div class="row">
+        <div class="d-flex justify-content-around p-4">
+          <button type="button" class="btn btn-primary px-5"><i class="fa-solid fa-paper-plane"></i> Soumettre la demande</button>
+          <button type="button" class="btn btn-outline-secondary px-5"><i class="fa-solid fa-rotate-right"></i> Reinitialiser</button>
+        </div>
+      </div>
+    </div>
+    <div class="container custom-width bg-white p-4 rounded">
+      <div class="row ">
+        <div class="d-flex flex-column">
+          <h3>Mes dernieres demandes</h3>
+          <div class="d-flex justify-content-between">
+            <div>
+              <h6>Conges payes</h6>
+              <p>15/03/2025 - 19/03/2025</p>
+            </div>
+            <div>
+              <p class="bg-body-tertiary mx-2 rounded-pill px-2"> En attente</p>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <div>
+              <h6>Conges payes</h6>
+              <p>15/03/2025 - 19/03/2025</p>
+            </div>
+            <div>
+              <p class="bg-body-tertiary mx-2 rounded-pill px-2"> En attente</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</section>
+
+  <!-- Footer -->
+<footer class="">
+  <div class="container-fluid bg-white">
+    <div class="row p-4 text-center text-md-start">
+      <div class="col-12 col-md-3 mb-3">
+        <h6>Ressources Humaines</h6>
+        <p>Service RH</p>
+        <p>rh@entreprise.com</p>
+        <p>01 23 45 67 12 01</p>
+      </div>
+      <div class="col-12 col-md-3 mb-3">
+        <h6>Ressources Humaines</h6>
+        <p>Service RH</p>
+        <p>rh@entreprise.com</p>
+        <p>01 23 45 67 12 01</p>
+      </div>
+      <div class="col-12 col-md-3 mb-3">
+        <h6>Ressources Humaines</h6>
+        <p>Service RH</p>
+        <p>rh@entreprise.com</p>
+        <p>01 23 45 67 12 01</p>
+      </div>
+      <div class="col-12 col-md-3 mb-3">
+        <h6>Ressources Humaines</h6>
+        <p>Service RH</p>
+        <p>rh@entreprise.com</p>
+        <p>01 23 45 67 12 01</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col text-center py-2 border-top">
+        <p class="mb-0">2025 Entreprise, Tous droits réservés</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Bootstrap js -->
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

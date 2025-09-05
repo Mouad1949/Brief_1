@@ -1,0 +1,153 @@
+/* body{
+  background-color: #D9D9D9;
+} */
+nav{
+  background-color:#fff;
+}
+span{
+  color:rgb(39, 65, 39);
+  font-size: larger;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.navbar-brand{
+  font-size: larger;
+  padding: 8px;
+  font-family:Monospace ;
+  font-weight: bold;
+  font-style: italic;
+  border-left:4px solid green;
+  border-right:4px solid black;
+  border-radius: 50%;
+}
+.two-navbar{
+  font-size: larger;
+  font-family:Cursive ;
+  
+}
+.nav-link:hover {
+  /* border: 2px solid blue; */
+  background-color: #6686fa;
+  border-radius: 50%;
+  color: #fff;
+}
+.logo{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.custom-width {
+  max-width: 800px;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.custom-width2 {
+  max-width: 800px;
+  margin: 20px auto;
+
+}
+.custom-card {
+  margin-bottom: 20px;
+  padding: 15px;      
+  border-radius: 8px;  
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+
+.image{
+  width: 50px;
+  height: 50px;
+}
+.card-date{
+  background-color: #fff; 
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+.card-date:hover{
+  background-color: #7c80eb;
+  cursor: pointer;
+  color: #fff;
+}
+.card-date1{
+  background-color: #fff; 
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+.card-date1:hover{
+  background-color: #f2a074;
+  cursor: pointer;
+  color: #fff;
+}
+.card-date2{
+  background-color: #fff; 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.card-date2:hover{
+  background-color: #a3e7cc;
+  cursor: pointer;
+  color: #fff;
+}
+.sec-card{
+  background-color: #f7f9fa; 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.sec-card:hover{
+  background-color: #a3e7cc;
+  cursor: pointer;
+  color: #fff;
+}
+.sec-card1{
+  background-color: #f7f9fa; 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.sec-card1:hover{
+  background-color: #7c80eb;
+  cursor: pointer;
+  color: #fff;
+}
+.sec-card2{
+  background-color: #f7f9fa; 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.sec-card2:hover{
+  background-color: #f2a074;
+  cursor: pointer;
+  color: #fff;
+}
+.sec-card3{
+  background-color: #f7f9fa; 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.sec-card3:hover{
+  background-color: #a177fc;
+  cursor: pointer;
+  color: #fff;
+}
+
+
+.card-bor:hover{
+  border:1px solid #a177fc;
+  cursor: pointer;
+  border-radius: 20%;
+}
+.card-bor1:hover{
+  border:1px solid #FF9B2F;
+  cursor: pointer;
+  border-radius: 20%;
+}
+.card-bor2:hover{
+  border:1px solid #FB4141;
+  cursor: pointer;
+  border-radius: 20%;
+}
+.card-bor3:hover{
+  border:1px solid #a3e7cc;
+  cursor: pointer;
+  border-radius: 20%;
+}

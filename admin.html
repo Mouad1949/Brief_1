@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlexiDays</title>
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="assets/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body class="bg-body-tertiary">
+  <header>
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid px-5">
+        <!-- <img class="logo" src="images/logo.png" alt="logo image"> -->
+        <a class="navbar-brand" href="#">Flexi-<span class="two-navbar">Days</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Dashbord</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="conges.html">Mes Conges</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="demande-conge.html">Demande conges</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="admin.htm">Adminitstrator</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img class="logo" src="images/hacker.png" alt="image logo"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="mb-5">
+    <div class="container rounded-2 mt-5">
+      <div class="row">
+        <div class="d-flex justify-content-between">
+          <div>
+            <h5 class="col-lg-11 col-md-11  p-2">Gestion des conges</h5>
+            <p>Ceres et gerez vos demandes de conges</p>
+          </div>
+          <div class="mx-3">
+            <button type="button" class="btn border border-primary mx-3"><i class="fa-solid fa-filter"></i> Filter</button>
+            <button type="button" class="btn border border-success"><i class="fa-solid fa-download"></i> Exporter</button>
+          </div>
+        </div>
+      </div>
+      <div class="row  p-5">
+        <div class="col-lg-3 col-md-6 col-sm-12 p-2">
+          <div class=" p-3 rounded-2 d-flex justify-content-between bg-white card-bor1">
+            <div class="d-flex flex-column">
+              <h6>En attente</h6>
+              <h5>12</h5>
+            </div>
+            <h5 class="mx-3"><i class="fa-solid fa-clock" style="color: #FF9B2F;"></i></h5>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 p-2">
+          <div class=" p-3 rounded-2 d-flex justify-content-between bg-white card-bor3">
+            <div class="d-flex flex-column">
+              <h6>Approuves</h6>
+              <h5>45</h5>
+            </div>
+            <h5 class="d-flex align-items-center mx-3"><i class="fa-solid fa-check" style="color: #a3e7cc;"></i></h5>
+            
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 p-2">
+          <div class=" p-3 rounded-2 d-flex justify-content-between bg-white card-bor2 card-bor">
+            <div class="d-flex flex-column">
+              <h6>Refuses</h6>
+              <h5>3</h5>
+            </div>
+            <h5 class="d-flex align-items-center mx-3"><i class="fa-solid fa-circle-xmark" style="color: #FB4141;"></i></h5>
+            
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 p-2">
+          <div class=" p-3 rounded-2 d-flex justify-content-between bg-white card-bor">
+            <div class="d-flex flex-column">
+              <h6>Total ce mois</h6>
+              <h5>60</h5>
+            </div>
+            <h5 class="d-flex align-items-center mx-3"><i class="fa-solid fa-calendar-days" style="color: #a176fc;"></i></h5>
+            
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="container bg-white rounded-2">
+      <div class="row p-3">
+        <div class="col-lg-12">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-6 mb-2 mb-md-0">
+              <h6>Demandes de congés</h6>
+            </div>
+            <div class="col-12 col-md-6 d-flex flex-column flex-md-row">
+              <select class="form-select m-2">
+                <option selected>Tous les status</option>
+                <option>....</option>
+              </select>
+              <input class="form-control m-2" type="search" placeholder="Search">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-3 border-top p-4">
+        <!-- Card 1 -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="border rounded-2 p-2">
+            <div class="d-flex justify-content-between p-2">
+              <div class="d-flex">
+                <div><img class="image" src="./images/man (1).png" alt="image 1"></div>
+                <div class="d-flex flex-column">
+                  <h6>Marie Dubois</h6>
+                  <p>Developpeurs</p>
+                </div>
+              </div>
+              <div>
+                <p class="bg-body-tertiary rounded-pill px-3 m-2">En attente</p>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between p-2">
+              <div>
+                <p>Type :</p>
+                <p>Du :</p>
+                <p>Au :</p>
+                <p>Duree :</p>
+                <button type="button" class="btn btn-success"><i class="fa-solid fa-check" style="color: #a3e7cc;"> </i>Approuve</button>
+              </div>
+              <div>
+                <p>Conges</p>
+                <p>15 jan 2025</p>
+                <p>22 jan 2025</p>
+                <p>5 jours</p>
+                <button type="button" class="btn border border-danger"><i class="fa-solid fa-circle-xmark" style="color: #FB4141;"> </i> Refuses</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="border rounded-2 p-2">
+            <div class="d-flex justify-content-between p-2">
+              <div class="d-flex">
+                <div><img class="image" src="./images/man (2).png" alt="image 1"></div>
+                <div class="d-flex flex-column">
+                  <h6>Marie Dubois</h6>
+                  <p>Developpeurs</p>
+                </div>
+              </div>
+              <div>
+                <p class="bg-body-tertiary rounded-pill px-3 m-2">En attente</p>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between p-2">
+              <div>
+                <p>Type :</p>
+                <p>Du :</p>
+                <p>Au :</p>
+                <p>Duree :</p>
+                <button type="button" class="btn btn-success"><i class="fa-solid fa-check" style="color: #a3e7cc;"> </i>Approuve</button>
+              </div>
+              <div>
+                <p>Conges</p>
+                <p>15 jan 2025</p>
+                <p>22 jan 2025</p>
+                <p>5 jours</p>
+                <button type="button" class="btn border border-danger"><i class="fa-solid fa-circle-xmark" style="color: #FB4141;"> </i> Refuses</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="border rounded-2 p-2">
+          <div class="d-flex justify-content-between p-2">
+              <div class="d-flex">
+                <div><img class="image" src="./images/man.png" alt="image 1"></div>
+                <div class="d-flex flex-column">
+                  <h6>Marie Dubois</h6>
+                  <p>Developpeurs</p>
+                </div>
+              </div>
+              <div>
+                <p class="bg-success rounded-pill px-3 m-2">Approuve</p>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between p-2">
+              <div>
+                <p>Type :</p>
+                <p>Du :</p>
+                <p>Au :</p>
+                <p>Duree :</p>
+                <button type="button" class="btn border border-success"><i class="fa-solid fa-check" style="color: #a3e7cc;"> </i>Approuve</button>
+              </div>
+              <div>
+                <p>Conges</p>
+                <p>15 jan 2025</p>
+                <p>22 jan 2025</p>
+                <p>5 jours</p>
+                <button type="button" class="btn border border-danger"><i class="fa-solid fa-circle-xmark" style="color: #FB4141;"> </i> Refuses</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row p-3">
+        <div class="">
+          <div class="row">
+            <div class="col-12 col-md-6 mb-2 mb-md-0">
+              <p>Affichage de 1 a 4 sur 60 demandes</p>
+            </div>
+            <!-- <div class="col-12 col-md-6 d-flex flex-column flex-md-row"> -->
+              <button type="button" class="btn btn-outline-success"><i class="fa-solid fa-chevron-left"></i> Suivant</button>
+              <p class="rounded-pill px-3 m-2">1</p>
+              <p class="bg-body-tertiary rounded-circle px-3 m-2">2</p> 
+              <button type="button" class="btn btn-outline-success">Precedent <i class="fa-solid fa-chevron-right"></i></button>
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+    <!-- Footer -->
+<footer class="">
+  <div class="container-fluid bg-white">
+    <div class="row p-4 text-center text-md-start">
+      <div class="col-12 col-md-3 mb-3">
+        <h6>Ressources Humaines</h6>
+        <p>Service RH</p>
+        <p>rh@entreprise.com</p>
+        <p>01 23 45 67 12 01</p>
+      </div>
+      <div class="col-12 col-md-3 mb-3">
+        <h6>Ressources Humaines</h6>
+        <p>Service RH</p>
+        <p>rh@entreprise.com</p>
+        <p>01 23 45 67 12 01</p>
+      </div>
+      <div class="col-12 col-md-3 mb-3">
+        <h6>Ressources Humaines</h6>
+        <p>Service RH</p>
+        <p>rh@entreprise.com</p>
+        <p>01 23 45 67 12 01</p>
+      </div>
+      <div class="col-12 col-md-3 mb-3">
+        <h6>Ressources Humaines</h6>
+        <p>Service RH</p>
+        <p>rh@entreprise.com</p>
+        <p>01 23 45 67 12 01</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col text-center py-2 border-top">
+        <p class="mb-0">2025 Entreprise, Tous droits réservés</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap js -->
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
