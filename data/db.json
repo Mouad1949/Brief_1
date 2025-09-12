@@ -1,0 +1,116 @@
+{
+  "employes": [
+    {
+      "id": 1,
+      "nom": "mouad",
+      "poste": "dev",
+      "soldeConges": 18,
+      "RTT": 8,
+      "Congés_maladie": 4
+    },
+    {
+      "id": 2,
+      "nom": "ayoub",
+      "poste": "dev",
+      "soldeConges": 18,
+      "RTT": 4,
+      "Congés_maladie": 4
+    },
+    {
+      "id": 3,
+      "nom": "Yassine",
+      "poste": "dev",
+      "soldeConges": 18,
+      "RTT": 4,
+      "Congés_maladie": 4
+    }
+  ],
+  "notifications": [
+    {
+      "id": 1,
+      "titre": "Notification importante",
+      "sujet": "Fermeture exceptionnelle",
+      "contenu": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      "date": "2025-09-08",
+      "lu": false
+    },
+    {
+      "id": 2,
+      "titre": "Rappel RH",
+      "sujet": "Soumission des congés",
+      "contenu": "Veuillez soumettre vos demandes de congés avant le 15 septembre.",
+      "date": "2025-09-07",
+      "lu": false
+    },
+    {
+      "id": 3,
+      "titre": "Information générale",
+      "sujet": "Mise à jour système",
+      "contenu": "Une maintenance technique aura lieu le 12 septembre.",
+      "date": "2025-09-05",
+      "lu": true
+    }
+  ],
+  "demandes": [
+    {
+      "id": "1",
+      "employeId": 1,
+      "dateDebut": "2025-09-10",
+      "dateFin": "2025-09-17",
+      "typeConges": "Congés tttt",
+      "justification": "testsc edc",
+      "etat": "approuvé",
+      "diffDays": 8
+    },
+    {
+      "id": "2",
+      "employeId": 1,
+      "dateDebut": "2025-09-22",
+      "dateFin": "2025-09-24",
+      "typeConges": "Congés maladie",
+      "justification": "maladie ",
+      "etat": "refusé",
+      "diffDays": 2
+    },
+    {
+      "id": "3",
+      "employeId": 1,
+      "dateDebut": "2025-09-17",
+      "dateFin": "2025-09-20",
+      "typeConges": "RTT",
+      "justification": "test RTT",
+      "etat": "approuvé",
+      "diffDays": 3
+    },
+    {
+      "id": "4",
+      "employeId": 2,
+      "dateDebut": "2025-09-15",
+      "dateFin": "2025-09-20",
+      "typeConges": "Congés payés",
+      "justification": "conges payes",
+      "etat": "en attente",
+      "diffDays": 5
+    },
+    {
+      "id": "5",
+      "employeId": 2,
+      "dateDebut": "2025-09-23",
+      "dateFin": "2025-09-26",
+      "typeConges": "RTT",
+      "justification": "conges RTT",
+      "etat": "en attente",
+      "diffDays": 3
+    },
+    {
+      "id": "6",
+      "employeId": 3,
+      "dateDebut": "2025-09-13",
+      "dateFin": "2025-09-16",
+      "typeConges": "RTT",
+      "justification": "wr sd",
+      "etat": "en attente",
+      "diffDays": 3
+    }
+  ]
+}

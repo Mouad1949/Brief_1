@@ -11,7 +11,7 @@
 <body class="bg-body-tertiary">
   <header>
     <nav class="navbar navbar-expand-lg ">
-      <div class="container-fluid px-5">
+      <div class="container  px-5">
         <!-- <img class="logo" src="images/logo.png" alt="logo image"> -->
         <a class="navbar-brand" href="#">Flexi-<span class="two-navbar">Days</span></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,7 +29,7 @@
               <a class="nav-link" href="demande-conge.html">Demande conges</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="admin.htm">Adminitstrator</a>
+              <a class="nav-link " href="admin.html">Adminitstrator</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#"><img class="logo" src="images/hacker.png" alt="image logo"></a>
@@ -46,12 +46,15 @@
         <p class="col-12">Bienvenue gerez vos conge et suivez vos demandes</p>
       </div>
     </div>
-    <div class="container rounded-2" style="background-color: #6686fa;">
+    <div class="container rounded-2" style="background-color: #6686fa;"  >
       <div class="row">
-        <h5 class="col-lg-11 col-md-11  p-2">Notifications importantes</h5>
-        <div class="col-lg-1 col-md-1"><i class="fa-solid fa-angle-left m-2 "></i><i class="fa-solid fa-angle-right"></i></div>
+        <h5 id="titreN" class="col-lg-11 col-md-11  p-2">Notifications importantes</h5>
+        <div class="col-lg-1 col-md-1">
+          <button id="btnLeft" class="btn btn-outline-light"><i class="fa-solid fa-angle-left"></i></button>
+          <button id="btnRight" class="btn btn-outline-light"><i class="fa-solid fa-angle-right"></i></button>
+        </div>
       </div>
-      <div class="row m-2">
+      <div class="row m-2" id="dataNotification">
         <div class="col-sm-12 my-2 bg-body-tertiary rounded-2">
             <h6 class="p-2"><i class="fa-solid fa-circle-exclamation"></i> Fermture exceptonnelle</h6>
             <p class="p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
@@ -68,7 +71,7 @@
               <p>RTT</p>
               <p>Congés maladie</p>
             </div>
-            <div class="text-end">
+            <div class="text-end" id="congePy">
               <i class="fa-solid fa-calendar-days mb-2 pt-2"></i>
               <p>25 jours</p>
               <p>8 jours</p>
@@ -84,7 +87,7 @@
               <p>Approuvées</p>
               <p>Refusées</p>
             </div>
-            <div class="d-flex align-items-end flex-column">
+            <div class="d-flex align-items-end flex-column" id="demandeC">
               <i class="fa-solid fa-clock mb-2 pt-2"></i>
               <p>2</p>
               <p>2</p>
@@ -115,18 +118,18 @@
       <div class="row g-3 p-4">
         <div class="col-lg-3 col-md-6 col-sm-12">
           <div class="d-flex justify-content-center align-items-start p-3 rounded-2 sec-card" >
-            <div>
+            <a href="demande-conge.html" style="color: black; border-top: none;">
               <h5 class="text-center"><i class="fa-solid fa-plus"></i></h5>
               <h5>Nouvelle demande</i></h5>
-            </div>
+            </a>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12">
           <div class="d-flex justify-content-center align-items-start p-3 rounded-2 sec-card1" >
-            <div>
+            <a href="conges.html" style="color: black; border-top: none;">
               <h5 class="text-center"><i class="fa-solid fa-bars"></i></h5>
               <h5>Mes conge</i></h5>
-            </div>
+            </a>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12">
@@ -151,6 +154,7 @@
 
 
 <!-- Bootstrap js -->
+<script src="main.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

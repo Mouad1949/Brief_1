@@ -30,7 +30,7 @@
               <a class="nav-link" href="demande-conge.html">Demande conges</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="admin.htm">Adminitstrator</a>
+              <a class="nav-link " href="admin.html">Adminitstrator</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#"><img class="logo" src="images/hacker.png" alt="image logo"></a>
@@ -47,13 +47,13 @@
         <h5 class="col-lg-11 col-md-11  p-2">Mes conges</h5>
         <p>Consuiltez et gerez vos demandes de conges</p>
       </div>
-      <div class="row  p-5">
+      <div class="row  p-5" >
         <div class="col-lg-3 col-md-6 col-sm-12 p-2">
           <div class=" p-3 rounded-2 d-flex bg-white card-bor">
             <h5 class="d-flex align-items-center mx-3"><i class="fa-solid fa-calendar-days" style="color: #a176fc;"></i></h5>
-            <div class="d-flex flex-column">
+            <div class="d-flex flex-column" >
               <h6>Solde restant</h6>
-              <h5>23</h5>
+              <h5 id="solde_congs">23</h5>
             </div>
           </div>
         </div>
@@ -62,7 +62,7 @@
             <h5 class="d-flex align-items-center mx-3"><i class="fa-solid fa-clock" style="color: #FF9B2F;"></i></h5>
             <div class="d-flex flex-column">
               <h6>Approuves</h6>
-              <h5>12</h5>
+              <h5 id="etatApprov">12</h5>
             </div>
           </div>
         </div>
@@ -71,7 +71,7 @@
             <h5 class="d-flex align-items-center mx-3"><i class="fa-solid fa-clock" style="color: #FF9B2F;"></i></h5>
             <div class="d-flex flex-column">
               <h6>En attente</h6>
-              <h5>2</h5>
+              <h5 id="etatAttent">2</h5>
             </div>
           </div>
         </div>
@@ -80,14 +80,15 @@
             <h5 class="d-flex align-items-center mx-3"><i class="fa-solid fa-circle-xmark" style="color: #FB4141;"></i></h5>
             <div class="d-flex flex-column">
               <h6>Refuses</h6>
-              <h5>1</h5>
+              <h5 id="etatRefus">1</h5>
             </div>
           </div>
         </div>
         
       </div>
     </div>
-    <div class="container rounded-2 bg-white custom-card">
+    
+    <div class="container rounded-2 bg-white custom-card" id="affichConges">
       <div class="row g-3 p-2 align-items-end">
         <div class="col-12 col-md-3">
           <h6 class="d-flex">
@@ -113,7 +114,7 @@
         </div>
       </div>
     </div>
-    <div class="container rounded-2 bg-white custom-card">
+    <!-- <div class="container rounded-2 bg-white custom-card">
       <div class="row g-3 p-2 align-items-end">
         <div class="col-12 col-md-3">
           <h6 class="d-flex">
@@ -137,8 +138,8 @@
           <p>Approuve par jean martin</p>
         </div>
       </div>
-    </div>
-    <div class="container rounded-2 bg-white custom-card">
+    </div> -->
+    <!-- <div class="container rounded-2 bg-white custom-card">
       <div class="row g-3 p-2 align-items-end">
         <div class="col-12 col-md-3">
           <h6 class="d-flex">
@@ -162,8 +163,8 @@
           <p>Approuve par jean martin</p>
         </div>
       </div>
-    </div>
-    <div class="container rounded-2 bg-white custom-card">
+    </div> -->
+    <!-- <div class="container rounded-2 bg-white custom-card">
       <div class="row g-3 p-2 align-items-end">
         <div class="col-12 col-md-3">
           <h6 class="d-flex">
@@ -188,8 +189,8 @@
           <button type="button" class="btn btn-outline-danger"><i class="fa-solid fa-trash" style="color: #FB4141;"></i> Annuler</button>
         </div>
       </div>
-    </div>
-    <div class="container rounded-2 bg-white custom-card">
+    </div> -->
+    <!-- <div class="container rounded-2 bg-white custom-card">
       <div class="row g-3 p-2 align-items-end">
         <div class="col-12 col-md-3">
           <h6 class="d-flex">
@@ -215,7 +216,7 @@
           <p>Refuse par jean martin</p>
         </div>
       </div>
-    </div>
+    </div> -->
 
     
 </section>
@@ -262,6 +263,7 @@
 
 
 <!-- Bootstrap js -->
+<script src="conge.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

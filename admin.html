@@ -30,7 +30,7 @@
               <a class="nav-link" href="demande-conge.html">Demande conges</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="admin.htm">Adminitstrator</a>
+              <a class="nav-link active" href="admin.html">Adminitstrator</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#"><img class="logo" src="images/hacker.png" alt="image logo"></a>
@@ -49,7 +49,7 @@
             <p>Ceres et gerez vos demandes de conges</p>
           </div>
           <div class="mx-3">
-            <button type="button" class="btn border border-primary mx-3"><i class="fa-solid fa-filter"></i> Filter</button>
+            <button type="button" id="filterBtn" class="btn border border-primary mx-3"><i class="fa-solid fa-filter"></i> Filter</button>
             <button type="button" class="btn border border-success"><i class="fa-solid fa-download"></i> Exporter</button>
           </div>
         </div>
@@ -57,7 +57,7 @@
       <div class="row  p-5">
         <div class="col-lg-3 col-md-6 col-sm-12 p-2">
           <div class=" p-3 rounded-2 d-flex justify-content-between bg-white card-bor1">
-            <div class="d-flex flex-column">
+            <div class="d-flex flex-column" id="enAttente">
               <h6>En attente</h6>
               <h5>12</h5>
             </div>
@@ -66,9 +66,9 @@
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12 p-2">
           <div class=" p-3 rounded-2 d-flex justify-content-between bg-white card-bor3">
-            <div class="d-flex flex-column">
+            <div class="d-flex flex-column" id="allAppro">
               <h6>Approuves</h6>
-              <h5>45</h5>
+              <h5 >45</h5>
             </div>
             <h5 class="d-flex align-items-center mx-3"><i class="fa-solid fa-check" style="color: #a3e7cc;"></i></h5>
             
@@ -76,7 +76,7 @@
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12 p-2">
           <div class=" p-3 rounded-2 d-flex justify-content-between bg-white card-bor2 card-bor">
-            <div class="d-flex flex-column">
+            <div class="d-flex flex-column" id="refuse">
               <h6>Refuses</h6>
               <h5>3</h5>
             </div>
@@ -86,7 +86,7 @@
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12 p-2">
           <div class=" p-3 rounded-2 d-flex justify-content-between bg-white card-bor">
-            <div class="d-flex flex-column">
+            <div class="d-flex flex-column" id="total">
               <h6>Total ce mois</h6>
               <h5>60</h5>
             </div>
@@ -106,9 +106,11 @@
               <h6>Demandes de congés</h6>
             </div>
             <div class="col-12 col-md-6 d-flex flex-column flex-md-row">
-              <select class="form-select m-2">
-                <option selected>Tous les status</option>
-                <option>....</option>
+              <select id="filterSelect" class="form-select w-auto d-inline-block mx-2">
+                <option value="all">Tous</option>
+                <option value="en attente">En attente</option>
+                <option value="approuvé">Approuvé</option>
+                <option value="refusé">Refusé</option>
               </select>
               <input class="form-control m-2" type="search" placeholder="Search">
             </div>
@@ -116,7 +118,7 @@
         </div>
       </div>
 
-      <div class="row g-3 border-top p-4">
+      <div class="row g-3 border-top p-4" id="demandesContainer">
         <!-- Card 1 -->
         <div class="col-lg-4 col-md-6 col-sm-12">
           <div class="border rounded-2 p-2">
@@ -151,7 +153,7 @@
           </div>
         </div>
         <!-- Card 2 -->
-        <div class="col-lg-4 col-md-6 col-sm-12">
+        <!-- <div class="col-lg-4 col-md-6 col-sm-12">
           <div class="border rounded-2 p-2">
             <div class="d-flex justify-content-between p-2">
               <div class="d-flex">
@@ -182,10 +184,10 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <!-- Card 3 -->
-        <div class="col-lg-4 col-md-6 col-sm-12">
+        <!-- <div class="col-lg-4 col-md-6 col-sm-12">
           <div class="border rounded-2 p-2">
           <div class="d-flex justify-content-between p-2">
               <div class="d-flex">
@@ -216,9 +218,9 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
-      <div class="row p-3">
+      <!-- <div class="row p-3">
         <div class="">
           <div class="row">
             <div class="col-12 col-md-6 mb-2 mb-md-0">
@@ -232,7 +234,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
 
@@ -278,6 +280,7 @@
 </footer>
 
 <!-- Bootstrap js -->
+ <script src="admin.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
