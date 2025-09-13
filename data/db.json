@@ -27,7 +27,7 @@
   ],
   "notifications": [
     {
-      "id": 1,
+      "id": "1",
       "titre": "Notification importante",
       "sujet": "Fermeture exceptionnelle",
       "contenu": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
@@ -35,7 +35,7 @@
       "lu": false
     },
     {
-      "id": 2,
+      "id": "2",
       "titre": "Rappel RH",
       "sujet": "Soumission des congés",
       "contenu": "Veuillez soumettre vos demandes de congés avant le 15 septembre.",
@@ -43,7 +43,7 @@
       "lu": false
     },
     {
-      "id": 3,
+      "id": "3",
       "titre": "Information générale",
       "sujet": "Mise à jour système",
       "contenu": "Une maintenance technique aura lieu le 12 septembre.",
@@ -57,7 +57,7 @@
       "employeId": 1,
       "dateDebut": "2025-09-10",
       "dateFin": "2025-09-17",
-      "typeConges": "Congés tttt",
+      "typeConges": "Congés tttt jjqws",
       "justification": "testsc edc",
       "etat": "approuvé",
       "diffDays": 8
@@ -89,7 +89,7 @@
       "dateFin": "2025-09-20",
       "typeConges": "Congés payés",
       "justification": "conges payes",
-      "etat": "en attente",
+      "etat": "approuvé",
       "diffDays": 5
     },
     {
@@ -99,7 +99,7 @@
       "dateFin": "2025-09-26",
       "typeConges": "RTT",
       "justification": "conges RTT",
-      "etat": "en attente",
+      "etat": "approuvé",
       "diffDays": 3
     },
     {
@@ -109,8 +109,18 @@
       "dateFin": "2025-09-16",
       "typeConges": "RTT",
       "justification": "wr sd",
-      "etat": "en attente",
+      "etat": "refusé",
       "diffDays": 3
+    },
+    {
+      "id": "7",
+      "employeId": 3,
+      "dateDebut": "2025-09-13",
+      "dateFin": "2025-09-15",
+      "typeConges": "RTT",
+      "justification": "hihi",
+      "etat": "refusé",
+      "diffDays": 2
     }
   ]
 }

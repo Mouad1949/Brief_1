@@ -34,8 +34,6 @@ async function showCongeStats() {
 showCongeStats();
 
 
-
-
 async function filterDemandes() {
   const resEmployes = await fetch("http://localhost:3000/employes");
   const employes = await resEmployes.json();
@@ -44,10 +42,10 @@ async function filterDemandes() {
   const demandes = await resDemandes.json();
 
   const container = document.getElementById("demandesContainer");
-  const filterBtn = document.getElementById("filterBtn");
   const filterSelect = document.getElementById("filterSelect");
+  const filterBtn = document.getElementById("filterBtn"); // ✅ button جديد
 
-  function render(selectedEtat = "all") {
+  function render(selectedEtat = "all", onlyLast = false) {
     container.innerHTML = ""; 
 
     for (const emp of employes) {
@@ -58,6 +56,16 @@ async function filterDemandes() {
       }
 
       if (userDemandes.length === 0) continue;
+
+      if (onlyLast) {
+        userDemandes = [
+          userDemandes.reduce((latest, current) => {
+            return new Date(current.dateDebut) > new Date(latest.dateDebut)
+              ? current
+              : latest;
+          })
+        ];
+      }
 
       for (const item of userDemandes) {
         const etatHtml = item.etat === "en attente"
@@ -108,52 +116,52 @@ async function filterDemandes() {
     }
   }
 
-  filterBtn.addEventListener("click", () => {
+
+  filterSelect.addEventListener("change", () => {
     const selected = filterSelect.value;
     render(selected);
   });
 
 
+  filterBtn.addEventListener("click", () => {
+    const selected = filterSelect.value;
+    render(selected, true);
+  });
+
+
   container.addEventListener('click', async function(e) {
-  const approveBtn = e.target.closest('.approveBtn');
-  const refuseBtn = e.target.closest('.refuseBtn');
-  if (!approveBtn && !refuseBtn) return;
+    const approveBtn = e.target.closest('.approveBtn');
+    const refuseBtn = e.target.closest('.refuseBtn');
+    if (!approveBtn && !refuseBtn) return;
 
-  const id = (approveBtn || refuseBtn).dataset.id;
-  const demandeToUpdate = demandes.find(d => d.id == id);
-  if (!demandeToUpdate) return;
+    const id = (approveBtn || refuseBtn).dataset.id;
+    const demandeToUpdate = demandes.find(d => d.id == id);
+    if (!demandeToUpdate) return;
 
-  if (demandeToUpdate.etat !== "en attente") {
-    alert("Cette demande ne peut pas être modifiée !");
-    return;
-  }
+    if (demandeToUpdate.etat !== "en attente") {
+      alert("Cette demande ne peut pas être modifiée !");
+      return;
+    }
 
+    demandeToUpdate.etat = approveBtn ? "approuvé" : "refusé";
 
-  demandeToUpdate.etat = approveBtn ? "approuvé" : "refusé";
-
-
-  try {
-    const res = await fetch(`http://localhost:3000/demandes/${id}`, {
-      method: "PUT",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(demandeToUpdate)
-    });
-    if (!res.ok) throw new Error("Erreur update");
-
-    alert("Etat modifié avec succès !");
-    render(filterSelect.value); 
-  } catch (err) {
-    console.error(err);
-    alert("Erreur lors de la modification de la demande");
-  }
+    try {
+      const res = await fetch(`http://localhost:3000/demandes/${id}`, {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(demandeToUpdate)
+      });
+      if (!res.ok) throw new Error("Erreur update");
+      render(filterSelect.value); 
+    } catch (err) {
+      console.error(err);
+      console.log("Erreur lors de la modification de la demande");
+    }
 
     render(filterSelect.value); 
   });
 
-  
   render();
 }
 
 filterDemandes();
-
-
